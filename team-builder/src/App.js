@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Card from './Component/Card'
 
 function App() {
+  const [card, newCard] = useState([
+    {
+      name: 'Jacob Williams',
+      email: 'jawilliamsdev@gmail.com',
+      role: 'Full-stacks Web Dev',
+    },
+    {
+      name: 'Jacob Williams #2',
+      email: 'jawilliamsdev@gmail.com',
+      role: 'Full-stacks Web Dev',
+    },
+    {
+      name: 'Jacob Williams #3',
+      email: 'jawilliamsdev@gmail.com',
+      role: 'Full-stacks Web Dev',
+    },
+    {
+      name: 'Jacob Williams #4',
+      email: 'jawilliamsdev@gmail.com',
+      role: 'Full-stacks Web Dev',
+    },
+    {
+      name: 'Jacob Williams #5',
+      email: 'jawilliamsdev@gmail.com',
+      role: 'Full-stacks Web Dev',
+    }
+  ])
+
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card card={card}/>
     </div>
   );
 }
