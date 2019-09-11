@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Create = props => {
-  const reset = { name: "", email: "", position: "" };
+  const reset = { name: "", email: "", role: "" };
   const [newCard, setNewCard] = useState(reset);
 
   const handleChange = event => {
@@ -36,13 +36,13 @@ const Create = props => {
       />
       <input
         name="email"
-        placeholder="email"
+        placeholder="E-Mail"
         onChange={handleChange}
         value={newCard.email}
       />
       <input
         name="role"
-        placeholder="role"
+        placeholder="Role"
         onChange={handleChange}
         value={newCard.role}
       />
