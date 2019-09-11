@@ -14,7 +14,7 @@ const Create = props => {
   const handleSubmit = event => {
     event.preventDefault();
 
-    if (!newCard.name || !newCard.email || !newCard.position) {
+    if (!newCard.name || !newCard.email || !newCard.role) {
       alert("Please fill out all fields!");
     } else {
       props.newCard([newCard, ...props.card]);
@@ -41,10 +41,10 @@ const Create = props => {
         value={newCard.email}
       />
       <input
-        name="position"
-        placeholder="position"
+        name="role"
+        placeholder="role"
         onChange={handleChange}
-        value={newCard.position}
+        value={newCard.role}
       />
       <button type="submit">Submit</button>
       <button type="button" onClick={resetForm}>

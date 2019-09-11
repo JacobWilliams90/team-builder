@@ -8,7 +8,7 @@ function App() {
     {
       name: "Jacob Williams",
       email: "jawilliamsdev@gmail.com",
-      position: "Full-stacks Web Dev"
+      role: "Full-stacks Web Dev"
     }
   ]);
 

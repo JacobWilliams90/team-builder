@@ -7,7 +7,7 @@ function Card(props) {
         <div className="card" key={index}>
           <h2>{card.name}</h2>
           <p>{card.email}</p>
-          <p>{card.position}</p>
+          <p>{card.role}</p>
         </div>
       ))}
     </div>
